@@ -24,4 +24,7 @@ class Tile
   def reveal
     @revealed = true
   end
+  def to_s
+    reveal == false ? " " : checked.to_s
+  end
 end
